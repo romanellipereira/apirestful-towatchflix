@@ -3,6 +3,9 @@ const app = express();
 
 app.use(express.json());
 
+const index = require('./routes/index.js');
+const movies = require('./routes/moviesRoute.js');
+
 app.use(function (req, res, next) {
     res.header('Acess-Control-Allow-Origin', '*');
     res.header(
@@ -11,5 +14,9 @@ app.use(function (req, res, next) {
     );
     next();
 });
+
+// midlewares
+app.use("/", index);
+app.use("/movies", movies);
 
 module.exports = app;
