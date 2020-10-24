@@ -5,7 +5,7 @@ const controller = require('../controller/moviesController.js')
 // Routes: getAll, post, getByID, put, patch, delete
 
 router.get("/", controller.getAllMovies);
-router.post("/", controller.createItem);
+router.post("/", controller.includeMovie);
 router.get("/:id", controller.getMovieByID);
 router.put("/:id", controller.updateItem);
 router.patch("/:id/watched/", controller.updateWatchedMovie);

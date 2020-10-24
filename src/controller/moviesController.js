@@ -5,7 +5,7 @@ const getAllMovies = (req, res) => {
     res.status(200).send(movies);
 };
 
-const createItem = (req, res) => {
+const includeMovie = (req, res) => {
     const { id, name , genre , synopsis , whatched } = req.body;
     movies.push({ id, name , genre , synopsis , whatched });
 
@@ -119,7 +119,7 @@ const deleteItem = (req, res) => {
 
 module.exports = {
     getAllMovies,
-    createItem,
+    includeMovie,
     getMovieByID,
     updateItem,
     updateWatchedMovie,
