@@ -118,11 +118,48 @@ const deleteTvShow = (req, res) => {
     };
 };
 
+const includeSeason = (req, res) => {
+    try {
+        const tvShowID = req.params.id;
+        const tvShowFound = tvShows.find(tvShow => tvShow.id == tvShowID);
+        console.log(tvShowFound.seasons.length)
+    
+        if (!tvShowFound) {
+            res.status(404).send({ message: "TV Show not found" });
+        } else {
+            const newID = () => {
+                if (tvShowFound.seasons.length > 0) {
+                    const id = tvShowFound.seasons[tvShowFound.seasons.length -1].id + 1;
+                    return id;
+                } else {
+                    const id = 1;
+                    return id;
+                }
+            }
+            const id = newID();
+            const { code, episode } = req.body;
+            tvShowFound.seasons.push({ id , code, episode });
+            
+            fs.writeFile("./src/model/tvShows.json" , JSON.stringify(tvShows) , 'utf8' , function(err) {
+                if (err) {
+                    res.status(424).send({ message: err });
+                } else {
+                    console.log("Update successful!")
+                    res.status(200).send(tvShowFound);
+                };
+            });
+        };
+    } catch (error) {
+        res.status(500).send({ message: "API error" });
+    };
+};
+
 module.exports = {
     getAllTvShows,
     getTvShowByID,
     includeTvShow,
     updateTvShow,
     markAsliked,
-    deleteTvShow
+    deleteTvShow,
+    includeSeason
 }
