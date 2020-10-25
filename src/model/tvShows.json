@@ -1,85 +1,125 @@
 [
   {
     "id": 1,
-    "name": "Hanna",
-    "genre": "Aventura",
-    "synopsis": "Um suspense bem elaborado e um drama sobre o amadurecimento, HANNA segue a jonada de uma jovem (...)",
+    "name": "You",
+    "genre": "Thriller",
+    "synopsis": "The first season follows the story of Joe Goldberg, a bookstore manager in New York, who upon meeting Guinevere Beck, an aspiring writer, becomes infatuated with her. He feeds his toxic obsession using social media and other technology to track her presence and remove obstacles to their romance.",
     "liked": true,
     "seasons": [
       {
         "id": 1,
-        "code": "season01",
+        "code": "S1",
         "episodes": [
-          { "id": 1, "code": "ep01", "name": "Episódio 1", "watched": true },
-          { "id": 2, "code": "ep02", "name": "Episódio 2", "watched": false },
-          { "id": 3, "code": "ep03", "name": "Episódio 3", "watched": false }
+          { "id": 1, "code": "E1", "name": "Pilot", "watched": true },
+          { "id": 2, "code": "E2", "name": "The Last Nice Guy in New York", "watched": false },
+          { "id": 3, "code": "E3", "name": "Maybe", "watched": false },
+          { "id": 4, "code": "E4", "name": "The Captain", "watched": false },
+          { "id": 5, "code": "E5", "name": "Living with the Enemy", "watched": false },
+          { "id": 6, "code": "E6", "name": "Amour Fou", "watched": false },
+          { "id": 7, "code": "E7", "name": "Everythingship", "watched": false },
+          { "id": 8, "code": "E8", "name": "You Got Me, Babe", "watched": false },
+          { "id": 9, "code": "E9", "name": "Candace", "watched": false },
+          { "id": 10, "code": "E10", "name": "Bluebeard's Castle", "watched": false }
         ]
       },
       {
         "id": 2,
-        "code": "season02",
+        "code": "S2",
         "episodes": [
-          { "id": 1, "code": "ep01", "name": "Episódio 1", "watched": false },
-          { "id": 2, "code": "ep02", "name": "Episódio 2", "watched": false },
-          { "id": 3, "code": "ep03", "name": "Episódio 3", "watched": false }
+          { "id": 1, "code": "E1", "name": "A Fresh Start", "watched": true },
+          { "id": 2, "code": "E2", "name": "Just the Tip", "watched": false },
+          { "id": 3, "code": "E3", "name": "What Are Friends For?", "watched": false },
+          { "id": 4, "code": "E4", "name": "The Good, the Bad, & the Hendy", "watched": false },
+          { "id": 5, "code": "E5", "name": "Have a Good Wellkend, Joe!", "watched": false },
+          { "id": 6, "code": "E6", "name": "Farewell, My Bunny", "watched": false },
+          { "id": 7, "code": "E7", "name": "Ex-istential Crisis", "watched": false },
+          { "id": 8, "code": "E8", "name": "Fear and Loathing in Beverly Hills", "watched": false },
+          { "id": 9, "code": "E9", "name": "P.I. Joe", "watched": false },
+          { "id": 10, "code": "E10", "name": "Love, Actually", "watched": false }
         ]
       }
     ]
   },
   {
     "id": 2,
-    "name": "Friends",
-    "genre": "Comédia",
-    "synopsis": "Seis jovens são unidos por laços familiares românticos e, principalmente, de amizade, enquanto (...)",
+    "name": "Love",
+    "genre": "Romantic comedy",
+    "synopsis": "The series is presented as a 'down-to-earth look at dating', exploring male and female perspectives on romantic relationships through the characters Mickey and Gus, played by Jacobs and Rust, respectively.",
     "liked": true,
     "seasons": [
       {
         "id": 1,
-        "code": "season01",
+        "code": "S1",
         "episodes": [
-          {
-            "id": 1,
-            "code": "ep01",
-            "name": "Aquele onde tudo começa",
-            "watched": true
-          },
-          {
-            "id": 2,
-            "code": "ep02",
-            "name": "Aquele com o Ultrassom",
-            "watched": false
-          },
-          {
-            "id": 3,
-            "code": "ep03",
-            "name": "Aquele com o Dedão",
-            "watched": true
-          },
-          {
-            "id": 4,
-            "code": "ep04",
-            "name": "Aquele com o George",
-            "watched": false
-          }
+          { "id": 1, "code": "E1", "name": "It Begins", "watched": true },
+          { "id": 2, "code": "E2", "name": "One Long Day", "watched": false },
+          { "id": 3, "code": "E3", "name": "Tested", "watched": true },
+          { "id": 4, "code": "E4", "name": "Party in the Hills", "watched": false },
+          { "id": 5, "code": "E5", "name": "The Date", "watched": false },
+          { "id": 6, "code": "E6", "name": "Andy", "watched": false },
+          { "id": 7, "code": "E7", "name": "Magic", "watched": false },
+          { "id": 8, "code": "E8", "name": "Closing Title Song", "watched": false },
+          { "id": 9, "code": "E9", "name": "The Table Read", "watched": false },
+          { "id": 10, "code": "E10", "name": "The End of the Beginning", "watched": false }
         ]
       },
       {
         "id": 2,
-        "code": "season02",
+        "code": "S2",
         "episodes": [
-          {
-            "id": 1,
-            "code": "ep01",
-            "name": "Aquele com a nova namorada",
-            "watched": false
-          },
-          {
-            "id": 2,
-            "code": "ep02",
-            "name": "Aquele do leite materno",
-            "watched": false
-          }
+          { "id": 1, "code": "E1", "name": "On Lockdown", "watched": true },
+          { "id": 2, "code": "E2", "name": "Friends Night Out", "watched": false },
+          { "id": 3, "code": "E3", "name": "While You Were Sleeping", "watched": true },
+          { "id": 4, "code": "E4", "name": "Shrooms", "watched": false },
+          { "id": 5, "code": "E5", "name": "A Day", "watched": false },
+          { "id": 6, "code": "E6", "name": "Forced Hiatus", "watched": false },
+          { "id": 7, "code": "E7", "name": "The Work Party", "watched": false },
+          { "id": 8, "code": "E8", "name": "Marty Dobbs", "watched": false },
+          { "id": 9, "code": "E9", "name": "Housesitting", "watched": false },
+          { "id": 10, "code": "E10", "name": "Liberty Down", "watched": false },
+          { "id": 11, "code": "E11", "name": "The Long D", "watched": false },
+          { "id": 12, "code": "E12", "name": "Back in Town", "watched": false }
         ]
+      },
+      {
+        "id": 3,
+        "code": "S3",
+        "episodes": [
+          { "id": 1, "code": "E1", "name": "Palm Springs Getaway", "watched": true },
+          { "id": 2, "code": "E2", "name": "Winners and Losers", "watched": false },
+          { "id": 3, "code": "E3", "name": "Arya and Greg", "watched": true },
+          { "id": 4, "code": "E4", "name": "I'm Sick", "watched": false },
+          { "id": 5, "code": "E5", "name": "Bertie's Birthday", "watched": false },
+          { "id": 6, "code": "E6", "name": "Directing", "watched": false },
+          { "id": 7, "code": "E7", "name": "Sarah from College", "watched": false },
+          { "id": 8, "code": "E8", "name": "Stunt Show", "watched": false },
+          { "id": 9, "code": "E9", "name": "You're My Gran Torino", "watched": false },
+          { "id": 10, "code": "E10", "name": "The Cruikshanks", "watched": false },
+          { "id": 11, "code": "E11", "name": "Anniversary Party", "watched": false },
+          { "id": 12, "code": "E12", "name": "Catalina", "watched": false }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Dirty John",
+    "genre": "Drama",
+    "synopsis": "Dirty John is a true crime story focusing on the life and exploits of John Meehan. The main focus of the story is Meehan's relationship with businesswoman Debra Newell, whom he met via an Internet dating site and married within months, as well as her immediate and extended family.",
+    "liked": false,
+    "seasons": []
+  },
+  {
+    "id": 4,
+    "name": "Sweet Magnolias",
+    "genre": "Drama",
+    "synopsis": "Three South Carolina women, best friends since childhood, as they shepherd each other through the complexities of romance, career, and family.",
+    "liked": false,
+    "seasons": [
+      {
+        "id": 1,
+        "code": "S1",
+        "episodes": []
       }
     ]
   }
