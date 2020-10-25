@@ -31,7 +31,7 @@
     "name": "Friends",
     "genre": "Comédia",
     "synopsis": "Seis jovens são unidos por laços familiares românticos e, principalmente, de amizade, enquanto (...)",
-    "liked": false,
+    "liked": true,
     "seasons": [
       {
         "id": 1,
@@ -82,13 +82,5 @@
         ]
       }
     ]
-  },
-  {
-    "id": 3,
-    "name": "You",
-    "genre": "Thriller",
-    "synopsis": "The first season follows the story of Joe Goldberg, a bookstore manager in New York (...).",
-    "liked": true,
-    "seasons": []
   }
 ]

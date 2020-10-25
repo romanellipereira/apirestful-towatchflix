@@ -8,7 +8,7 @@ router.get("/:id", controller.getTvShowByID);
 router.post("/", controller.includeTvShow);
 router.put("/:id", controller.updateTvShow);
 router.patch("/:id/liked/", controller.markAsliked);
-// router.delete("/:id", controller.deleteTvShow);
+router.delete("/:id", controller.deleteTvShow);
 // router.post("/:id/season/:seasonId/episode", controller.includeEpisode);
 // router.post("/:id/season", controller.includeSeason);
 // router.delete("/:id/season/:seasonId", controller.deleteSeason);

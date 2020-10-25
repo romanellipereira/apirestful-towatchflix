@@ -92,10 +92,37 @@ const markAsliked = (req, res) => {
     };
 };
 
+const deleteTvShow = (req, res) => {
+    try {
+        const tvShowID = req.params.id;
+        const tvShowFound = tvShows.find(tvShow => tvShow.id == tvShowID);
+        const tvShowIndex = tvShows.indexOf(tvShowFound);
+
+        if (tvShowIndex >= 0) {
+            tvShows.splice(tvShowIndex, 1);
+
+            fs.writeFile("./src/model/tvShows.json" , JSON.stringify(tvShows) , 'utf8' , function(err) {
+                if (err) {
+                    res.status(424).send({ message: err });
+                } else {
+                    console.log("Update successful!");
+                    res.sendStatus(204);
+               };
+            });
+
+        } else {
+            res.status(404).send({ message: "TV Show not found" });
+        };
+    } catch (error) {
+        res.status(500).send({ message: "API error" });
+    };
+};
+
 module.exports = {
     getAllTvShows,
     getTvShowByID,
     includeTvShow,
     updateTvShow,
-    markAsliked
+    markAsliked,
+    deleteTvShow
 }
